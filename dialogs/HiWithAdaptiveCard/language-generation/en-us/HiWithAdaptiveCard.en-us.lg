@@ -1,0 +1,13 @@
+[import](common.lg)
+
+# TextInput_Prompt_VAtf6N()
+[Activity
+    Attachments = ${json(CardForItem())}
+    InputHint = acceptingInput
+]
+# SendActivity_6t6JvP()
+- User data: ${dialog.thedata}
+# TextInput_InvalidPrompt_VAtf6N()
+[Activity
+    Text = Not valid
+]

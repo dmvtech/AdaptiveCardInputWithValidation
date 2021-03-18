@@ -1,0 +1,13 @@
+[import](common.lg)
+
+# SendActivity_Welcome
+- ${WelcomeUser()}
+
+# SendActivity_5w1Ff0()
+[Activity
+    Text = ${SendActivity_5w1Ff0_text()}
+]
+
+# SendActivity_5w1Ff0_text()
+- Hit unknown intent
+- Unknown dude!

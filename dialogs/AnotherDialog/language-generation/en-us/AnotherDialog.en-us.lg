@@ -1,0 +1,12 @@
+[import](common.lg)
+
+# TextInput_Prompt_rDKxgN()
+[Activity
+    Text = What is your age?
+]
+
+# SendActivity_akhxYw()
+[Activity
+    Text = Is integer: ${isInteger(dialog.userage)}
+]
+

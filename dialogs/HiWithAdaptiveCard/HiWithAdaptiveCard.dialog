@@ -1,0 +1,52 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "ilxYAt",
+    "name": "HiWithAdaptiveCard",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "yE9g3h"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "VAtf6N"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_VAtf6N()}",
+          "unrecognizedPrompt": "",
+          "property": "dialog.thedata",
+          "invalidPrompt": "${TextInput_InvalidPrompt_VAtf6N()}",
+          "validations": [
+            "=isInteger(turn.activity.value.question)"
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "6t6JvP"
+          },
+          "activity": "${SendActivity_6t6JvP()}"
+        }
+      ]
+    }
+  ],
+  "generator": "HiWithAdaptiveCard.lg",
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": []
+  },
+  "id": "HiWithAdaptiveCard"
+}
